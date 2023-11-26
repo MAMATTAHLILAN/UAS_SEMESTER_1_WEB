@@ -1,0 +1,131 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li, form, input, textarea {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a base font and background color */
+body {
+  font-family: "Random Font 1", "Random Font 2", sans-serif;
+  background-color: #f1f1f1;
+}
+
+/* Style the header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Style the logo */
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Style the movies section */
+#movies {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.movies-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.movies-content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.movie {
+  display: inline-block;
+  margin: 20px;
+}
+
+.movie img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.movie h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.movie p {
+  margin-top: 5px;
+}
+
+.movie a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.movie .btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  .movies-content {
+    padding: 0 20px;
+  }
+
+  .movie {
+    margin: 10px;
+  }
+
+  .movie img {
+    width: 100%;
+    height: auto;
+  }
+}
